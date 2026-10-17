@@ -117,6 +117,7 @@ main{max-width:1160px;margin:0 auto;padding:22px 20px 40px;overflow-x:hidden}
 .banner h1{color:#fff;margin-bottom:6px}
 .banner .kick{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#7dd3fc;font-weight:700;margin-bottom:6px}
 .banner p{color:#dbeafe;max-width:74ch;margin:0} .banner strong{color:#fff}
+.banner .wm-bg{position:absolute;inset:0;pointer-events:none;overflow:hidden} .banner .wm-bg span{position:absolute;font-family:'Fraunces',serif;font-weight:700;line-height:1;color:rgba(255,255,255,.07);white-space:nowrap} .banner>*:not(.wm-bg){position:relative;z-index:1}
 .banner .wm{position:absolute;right:-6px;bottom:-30px;font-family:'Fraunces',serif;font-weight:700;font-size:6rem;color:rgba(255,255,255,.05);pointer-events:none;white-space:nowrap}
 
 .card{background:#fff;border-radius:var(--rl);box-shadow:var(--sh);padding:22px 24px;margin-bottom:20px;border-top:4px solid var(--ej);min-width:0;scroll-margin-top:70px}
@@ -234,7 +235,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,.acc-h:focus-visib
   .topbar-inner{justify-content:center;text-align:center}
   main{padding:16px 16px 30px}
   .card{padding:16px 14px} .labo{padding:14px 12px}
-  .banner{padding:18px 16px} .banner .wm{font-size:4rem}
+  .banner{padding:18px 16px} .banner .wm{font-size:4rem} .banner .wm-bg span{font-size:2.6rem!important}
   .md{font-size:1.04em}
   .tab-btn{padding:12px 9px;font-size:14px}
   .tab-btn .lg{display:none}
@@ -302,7 +303,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,.acc-h:focus-visib
     <div class="kick">Etapa 1 · Tema 1</div>
     <h1>Derivadas parciales</h1>
     <p>Una función de dos variables cambia de una manera si se mueve \(x\) y de otra si se mueve \(y\). La derivada parcial mide <strong>cada cambio por separado</strong>.</p>
-    <div class="wm">∂z</div>
+    <div class="wm-bg" aria-hidden="true"><span style="left:1%;top:-28%;font-size:4.4rem;transform:rotate(-12deg)">∂z</span><span style="left:13%;top:38%;font-size:3rem;transform:rotate(8deg)">∂z</span><span style="left:25%;top:-12%;font-size:5rem;transform:rotate(-6deg)">∂z</span><span style="left:37%;top:48%;font-size:3.4rem;transform:rotate(10deg)">∂z</span><span style="left:49%;top:-34%;font-size:4.4rem;transform:rotate(4deg)">∂z</span><span style="left:60%;top:30%;font-size:3.2rem;transform:rotate(-10deg)">∂z</span><span style="left:71%;top:-18%;font-size:5.2rem;transform:rotate(6deg)">∂z</span><span style="left:82%;top:42%;font-size:3.6rem;transform:rotate(-4deg)">∂z</span><span style="left:91%;top:-26%;font-size:4.6rem;transform:rotate(12deg)">∂z</span><span style="left:31%;top:78%;font-size:2.8rem;transform:rotate(-8deg)">∂z</span><span style="left:76%;top:80%;font-size:3rem;transform:rotate(5deg)">∂z</span><span style="left:6%;top:80%;font-size:3.2rem;transform:rotate(6deg)">∂z</span><span style="left:55%;top:82%;font-size:2.6rem;transform:rotate(-5deg)">∂z</span><span style="left:96%;top:62%;font-size:3rem;transform:rotate(-9deg)">∂z</span></div>
   </div>
 
   <div class="card">
@@ -436,7 +437,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,.acc-h:focus-visib
     <div class="kick">Etapa 1 · Tema 2</div>
     <h1>Derivadas sucesivas y teorema de Schwarz</h1>
     <p>Las derivadas parciales son funciones, así que se pueden volver a derivar. De las cuatro derivadas segundas, <strong>las dos cruzadas coinciden</strong>.</p>
-    <div class="wm">z″</div>
+    <div class="wm-bg" aria-hidden="true"><span style="left:1%;top:-28%;font-size:4.4rem;transform:rotate(-12deg)">z″</span><span style="left:13%;top:38%;font-size:3rem;transform:rotate(8deg)">z″</span><span style="left:25%;top:-12%;font-size:5rem;transform:rotate(-6deg)">z″</span><span style="left:37%;top:48%;font-size:3.4rem;transform:rotate(10deg)">z″</span><span style="left:49%;top:-34%;font-size:4.4rem;transform:rotate(4deg)">z″</span><span style="left:60%;top:30%;font-size:3.2rem;transform:rotate(-10deg)">z″</span><span style="left:71%;top:-18%;font-size:5.2rem;transform:rotate(6deg)">z″</span><span style="left:82%;top:42%;font-size:3.6rem;transform:rotate(-4deg)">z″</span><span style="left:91%;top:-26%;font-size:4.6rem;transform:rotate(12deg)">z″</span><span style="left:31%;top:78%;font-size:2.8rem;transform:rotate(-8deg)">z″</span><span style="left:76%;top:80%;font-size:3rem;transform:rotate(5deg)">z″</span><span style="left:6%;top:80%;font-size:3.2rem;transform:rotate(6deg)">z″</span><span style="left:55%;top:82%;font-size:2.6rem;transform:rotate(-5deg)">z″</span><span style="left:96%;top:62%;font-size:3rem;transform:rotate(-9deg)">z″</span></div>
   </div>
 
   <div class="card">
@@ -584,7 +585,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,.acc-h:focus-visib
     <div class="kick">Etapa 1 · Tema 3</div>
     <h1>Gradiente y derivada direccional</h1>
     <p>Las derivadas parciales miden el cambio hacia la derecha y hacia arriba. Con el gradiente se calcula el cambio <strong>en cualquier dirección</strong>, y se sabe en cuál es más rápido.</p>
-    <div class="wm">∇z</div>
+    <div class="wm-bg" aria-hidden="true"><span style="left:1%;top:-28%;font-size:4.4rem;transform:rotate(-12deg)">∇z</span><span style="left:13%;top:38%;font-size:3rem;transform:rotate(8deg)">∇z</span><span style="left:25%;top:-12%;font-size:5rem;transform:rotate(-6deg)">∇z</span><span style="left:37%;top:48%;font-size:3.4rem;transform:rotate(10deg)">∇z</span><span style="left:49%;top:-34%;font-size:4.4rem;transform:rotate(4deg)">∇z</span><span style="left:60%;top:30%;font-size:3.2rem;transform:rotate(-10deg)">∇z</span><span style="left:71%;top:-18%;font-size:5.2rem;transform:rotate(6deg)">∇z</span><span style="left:82%;top:42%;font-size:3.6rem;transform:rotate(-4deg)">∇z</span><span style="left:91%;top:-26%;font-size:4.6rem;transform:rotate(12deg)">∇z</span><span style="left:31%;top:78%;font-size:2.8rem;transform:rotate(-8deg)">∇z</span><span style="left:76%;top:80%;font-size:3rem;transform:rotate(5deg)">∇z</span><span style="left:6%;top:80%;font-size:3.2rem;transform:rotate(6deg)">∇z</span><span style="left:55%;top:82%;font-size:2.6rem;transform:rotate(-5deg)">∇z</span><span style="left:96%;top:62%;font-size:3rem;transform:rotate(-9deg)">∇z</span></div>
   </div>
 
   <div class="card">
@@ -729,7 +730,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,.acc-h:focus-visib
     <div class="kick">Etapa 1 · Tema 4</div>
     <h1>Plano tangente a una superficie</h1>
     <p>Mirada de cerca, una superficie suave se parece a un plano. Ese plano se arma con <strong>el punto y las dos derivadas parciales</strong>.</p>
-    <div class="wm">z₀</div>
+    <div class="wm-bg" aria-hidden="true"><span style="left:1%;top:-28%;font-size:4.4rem;transform:rotate(-12deg)">z₀</span><span style="left:13%;top:38%;font-size:3rem;transform:rotate(8deg)">z₀</span><span style="left:25%;top:-12%;font-size:5rem;transform:rotate(-6deg)">z₀</span><span style="left:37%;top:48%;font-size:3.4rem;transform:rotate(10deg)">z₀</span><span style="left:49%;top:-34%;font-size:4.4rem;transform:rotate(4deg)">z₀</span><span style="left:60%;top:30%;font-size:3.2rem;transform:rotate(-10deg)">z₀</span><span style="left:71%;top:-18%;font-size:5.2rem;transform:rotate(6deg)">z₀</span><span style="left:82%;top:42%;font-size:3.6rem;transform:rotate(-4deg)">z₀</span><span style="left:91%;top:-26%;font-size:4.6rem;transform:rotate(12deg)">z₀</span><span style="left:31%;top:78%;font-size:2.8rem;transform:rotate(-8deg)">z₀</span><span style="left:76%;top:80%;font-size:3rem;transform:rotate(5deg)">z₀</span><span style="left:6%;top:80%;font-size:3.2rem;transform:rotate(6deg)">z₀</span><span style="left:55%;top:82%;font-size:2.6rem;transform:rotate(-5deg)">z₀</span><span style="left:96%;top:62%;font-size:3rem;transform:rotate(-9deg)">z₀</span></div>
   </div>
 
   <div class="card">
@@ -904,7 +905,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,.acc-h:focus-visib
     <div class="kick">Etapa 1 · Tema 5</div>
     <h1>Regla de la cadena</h1>
     <p>Si \(x\) e \(y\) cambian con el tiempo, \(z\) también cambia. La regla de la cadena dice a qué ritmo, <strong>sumando lo que aporta cada variable</strong>.</p>
-    <div class="wm">dz</div>
+    <div class="wm-bg" aria-hidden="true"><span style="left:1%;top:-28%;font-size:4.4rem;transform:rotate(-12deg)">dz</span><span style="left:13%;top:38%;font-size:3rem;transform:rotate(8deg)">dz</span><span style="left:25%;top:-12%;font-size:5rem;transform:rotate(-6deg)">dz</span><span style="left:37%;top:48%;font-size:3.4rem;transform:rotate(10deg)">dz</span><span style="left:49%;top:-34%;font-size:4.4rem;transform:rotate(4deg)">dz</span><span style="left:60%;top:30%;font-size:3.2rem;transform:rotate(-10deg)">dz</span><span style="left:71%;top:-18%;font-size:5.2rem;transform:rotate(6deg)">dz</span><span style="left:82%;top:42%;font-size:3.6rem;transform:rotate(-4deg)">dz</span><span style="left:91%;top:-26%;font-size:4.6rem;transform:rotate(12deg)">dz</span><span style="left:31%;top:78%;font-size:2.8rem;transform:rotate(-8deg)">dz</span><span style="left:76%;top:80%;font-size:3rem;transform:rotate(5deg)">dz</span><span style="left:6%;top:80%;font-size:3.2rem;transform:rotate(6deg)">dz</span><span style="left:55%;top:82%;font-size:2.6rem;transform:rotate(-5deg)">dz</span><span style="left:96%;top:62%;font-size:3rem;transform:rotate(-9deg)">dz</span></div>
   </div>
 
   <div class="card">
@@ -1046,7 +1047,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,.acc-h:focus-visib
     <div class="kick">Etapa 2 · Tema 6</div>
     <h1>Extremos libres</h1>
     <p>¿En qué puntos una función de dos variables tiene un máximo o un mínimo relativo? Las derivadas primeras dan <strong>los candidatos</strong>; las segundas <strong>los clasifican</strong>.</p>
-    <div class="wm">H</div>
+    <div class="wm-bg" aria-hidden="true"><span style="left:1%;top:-28%;font-size:4.4rem;transform:rotate(-12deg)">H</span><span style="left:13%;top:38%;font-size:3rem;transform:rotate(8deg)">H</span><span style="left:25%;top:-12%;font-size:5rem;transform:rotate(-6deg)">H</span><span style="left:37%;top:48%;font-size:3.4rem;transform:rotate(10deg)">H</span><span style="left:49%;top:-34%;font-size:4.4rem;transform:rotate(4deg)">H</span><span style="left:60%;top:30%;font-size:3.2rem;transform:rotate(-10deg)">H</span><span style="left:71%;top:-18%;font-size:5.2rem;transform:rotate(6deg)">H</span><span style="left:82%;top:42%;font-size:3.6rem;transform:rotate(-4deg)">H</span><span style="left:91%;top:-26%;font-size:4.6rem;transform:rotate(12deg)">H</span><span style="left:31%;top:78%;font-size:2.8rem;transform:rotate(-8deg)">H</span><span style="left:76%;top:80%;font-size:3rem;transform:rotate(5deg)">H</span><span style="left:6%;top:80%;font-size:3.2rem;transform:rotate(6deg)">H</span><span style="left:55%;top:82%;font-size:2.6rem;transform:rotate(-5deg)">H</span><span style="left:96%;top:62%;font-size:3rem;transform:rotate(-9deg)">H</span></div>
   </div>
 
   <div class="card">
@@ -1247,7 +1248,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,.acc-h:focus-visib
     <div class="kick">Etapa 2 · Tema 7</div>
     <h1>Recintos</h1>
     <p>Para integrar sobre una región del plano hay que saber describirla: entre qué valores se mueve una variable y, para cada uno, <strong>entre qué curvas se mueve la otra</strong>. Es el repaso de áreas de Análisis I, mirado con otros ojos.</p>
-    <div class="wm">R</div>
+    <div class="wm-bg" aria-hidden="true"><span style="left:1%;top:-28%;font-size:4.4rem;transform:rotate(-12deg)">R</span><span style="left:13%;top:38%;font-size:3rem;transform:rotate(8deg)">R</span><span style="left:25%;top:-12%;font-size:5rem;transform:rotate(-6deg)">R</span><span style="left:37%;top:48%;font-size:3.4rem;transform:rotate(10deg)">R</span><span style="left:49%;top:-34%;font-size:4.4rem;transform:rotate(4deg)">R</span><span style="left:60%;top:30%;font-size:3.2rem;transform:rotate(-10deg)">R</span><span style="left:71%;top:-18%;font-size:5.2rem;transform:rotate(6deg)">R</span><span style="left:82%;top:42%;font-size:3.6rem;transform:rotate(-4deg)">R</span><span style="left:91%;top:-26%;font-size:4.6rem;transform:rotate(12deg)">R</span><span style="left:31%;top:78%;font-size:2.8rem;transform:rotate(-8deg)">R</span><span style="left:76%;top:80%;font-size:3rem;transform:rotate(5deg)">R</span><span style="left:6%;top:80%;font-size:3.2rem;transform:rotate(6deg)">R</span><span style="left:55%;top:82%;font-size:2.6rem;transform:rotate(-5deg)">R</span><span style="left:96%;top:62%;font-size:3rem;transform:rotate(-9deg)">R</span></div>
   </div>
 
   <div class="card">
@@ -1405,7 +1406,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,.acc-h:focus-visib
     <div class="kick">Etapa 2 · Tema 8</div>
     <h1>Integrales dobles</h1>
     <p>La integral doble suma los valores de una función sobre todo un recinto. Con ella se calculan <strong>volúmenes, áreas y promedios</strong>.</p>
-    <div class="wm">∬</div>
+    <div class="wm-bg" aria-hidden="true"><span style="left:1%;top:-28%;font-size:4.4rem;transform:rotate(-12deg)">∬</span><span style="left:13%;top:38%;font-size:3rem;transform:rotate(8deg)">∬</span><span style="left:25%;top:-12%;font-size:5rem;transform:rotate(-6deg)">∬</span><span style="left:37%;top:48%;font-size:3.4rem;transform:rotate(10deg)">∬</span><span style="left:49%;top:-34%;font-size:4.4rem;transform:rotate(4deg)">∬</span><span style="left:60%;top:30%;font-size:3.2rem;transform:rotate(-10deg)">∬</span><span style="left:71%;top:-18%;font-size:5.2rem;transform:rotate(6deg)">∬</span><span style="left:82%;top:42%;font-size:3.6rem;transform:rotate(-4deg)">∬</span><span style="left:91%;top:-26%;font-size:4.6rem;transform:rotate(12deg)">∬</span><span style="left:31%;top:78%;font-size:2.8rem;transform:rotate(-8deg)">∬</span><span style="left:76%;top:80%;font-size:3rem;transform:rotate(5deg)">∬</span><span style="left:6%;top:80%;font-size:3.2rem;transform:rotate(6deg)">∬</span><span style="left:55%;top:82%;font-size:2.6rem;transform:rotate(-5deg)">∬</span><span style="left:96%;top:62%;font-size:3rem;transform:rotate(-9deg)">∬</span></div>
   </div>
 
   <div class="card">
@@ -1578,7 +1579,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,.acc-h:focus-visib
     <div class="kick">Etapa 1 · Para repasar</div>
     <h1>Resumen de la etapa 1</h1>
     <p>Los cinco temas de la etapa en una página: las fórmulas, qué dice cada una y los errores que conviene evitar.</p>
-    <div class="wm">Σ</div>
+    <div class="wm-bg" aria-hidden="true"><span style="left:1%;top:-28%;font-size:4.4rem;transform:rotate(-12deg)">∂</span><span style="left:13%;top:38%;font-size:3rem;transform:rotate(8deg)">∇</span><span style="left:25%;top:-12%;font-size:5rem;transform:rotate(-6deg)">∂</span><span style="left:37%;top:48%;font-size:3.4rem;transform:rotate(10deg)">∇</span><span style="left:49%;top:-34%;font-size:4.4rem;transform:rotate(4deg)">∂</span><span style="left:60%;top:30%;font-size:3.2rem;transform:rotate(-10deg)">∇</span><span style="left:71%;top:-18%;font-size:5.2rem;transform:rotate(6deg)">∂</span><span style="left:82%;top:42%;font-size:3.6rem;transform:rotate(-4deg)">∇</span><span style="left:91%;top:-26%;font-size:4.6rem;transform:rotate(12deg)">∂</span><span style="left:31%;top:78%;font-size:2.8rem;transform:rotate(-8deg)">∇</span><span style="left:76%;top:80%;font-size:3rem;transform:rotate(5deg)">∂</span><span style="left:6%;top:80%;font-size:3.2rem;transform:rotate(6deg)">∇</span><span style="left:55%;top:82%;font-size:2.6rem;transform:rotate(-5deg)">∂</span><span style="left:96%;top:62%;font-size:3rem;transform:rotate(-9deg)">∇</span></div>
   </div>
 
   <div class="card">
@@ -1615,7 +1616,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,.acc-h:focus-visib
     <div class="kick">Etapa 2 · Para repasar</div>
     <h1>Resumen de la etapa 2</h1>
     <p>Los tres temas de la etapa en una página: las fórmulas, qué dice cada una y los errores que conviene evitar.</p>
-    <div class="wm">Σ</div>
+    <div class="wm-bg" aria-hidden="true"><span style="left:1%;top:-28%;font-size:4.4rem;transform:rotate(-12deg)">H</span><span style="left:13%;top:38%;font-size:3rem;transform:rotate(8deg)">∬</span><span style="left:25%;top:-12%;font-size:5rem;transform:rotate(-6deg)">H</span><span style="left:37%;top:48%;font-size:3.4rem;transform:rotate(10deg)">∬</span><span style="left:49%;top:-34%;font-size:4.4rem;transform:rotate(4deg)">H</span><span style="left:60%;top:30%;font-size:3.2rem;transform:rotate(-10deg)">∬</span><span style="left:71%;top:-18%;font-size:5.2rem;transform:rotate(6deg)">H</span><span style="left:82%;top:42%;font-size:3.6rem;transform:rotate(-4deg)">∬</span><span style="left:91%;top:-26%;font-size:4.6rem;transform:rotate(12deg)">H</span><span style="left:31%;top:78%;font-size:2.8rem;transform:rotate(-8deg)">∬</span><span style="left:76%;top:80%;font-size:3rem;transform:rotate(5deg)">H</span><span style="left:6%;top:80%;font-size:3.2rem;transform:rotate(6deg)">∬</span><span style="left:55%;top:82%;font-size:2.6rem;transform:rotate(-5deg)">H</span><span style="left:96%;top:62%;font-size:3rem;transform:rotate(-9deg)">∬</span></div>
   </div>
 
   <div class="card">
